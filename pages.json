@@ -1,0 +1,61 @@
+{
+	"pages": [{
+		"path": "pages/home/home",
+		"path": "pages/index/index",
+		"style": {
+			"app-plus": {
+				"titleNView": {
+					"type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+					"searchInput": {
+						"backgroundColor": "#fff",
+						"borderRadius": "6px", //输入框圆角
+						"placeholder": "请输入搜索内容",
+						"disabled": true //disable时点击输入框不置焦，可以跳到新页面搜索
+					}
+				}
+			},
+			"enablePullDownRefresh":true//开启下拉刷新
+		}
+	},
+	{
+		"path": "pages/index/index", //搜索页面
+		"style": {
+			"app-plus": {
+				"titleNView": {
+					"type": "transparent",//透明渐变导航栏 App-nvue 2.4.4+ 支持
+					"searchInput": {
+						"backgroundColor": "#fff",
+						"borderRadius": "6px", //输入框圆角
+						"placeholder": "请输入搜索内容",
+						"disabled": true //disable时点击输入框不置焦，可以跳到新页面搜索
+					}
+				}
+			}
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+	    "color": "#CCCCCC",
+	    "selectedColor": "#FF6666",
+	    "borderStyle": "black",
+	    "backgroundColor": "#D3D3D3",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "./static/icon/jita.png",
+	        "selectedIconPath": "static/icon/jita.png",
+	        "text": "Home"
+	    }, {
+	        "pagePath": "pages/home/home",
+	        "iconPath": "./static/icon/yinyue.png",
+	        "selectedIconPath": "static//icon/yinyue.png",
+	        "text": "推荐"
+	    }]
+	}
+
+}
